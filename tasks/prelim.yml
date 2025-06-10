@@ -107,6 +107,7 @@
                 - libselinux
                 - policycoreutils-python
             state: present
+        ignore_errors: true
 
       - name: "PRELIM | Section 1.5 | Check current firewalld_t semanage state"
         ansible.builtin.shell: semanage permissive -l | grep firewalld_t

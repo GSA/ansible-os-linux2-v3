@@ -73,6 +73,7 @@
       manager: auto
   tags:
       - always
+  ignore_errors: true
 
 - name: Import section 1 tasks
   ansible.builtin.import_tasks:

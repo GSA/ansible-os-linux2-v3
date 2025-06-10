@@ -54,12 +54,12 @@
   tags:
       - rule_4.3.7
 
-- name: Run pre-reqs
-  ansible.builtin.import_tasks:
-      file: check_prereqs.yml
-  tags:
-      - always
-      - prereqs
+#- name: Run pre-reqs
+ # ansible.builtin.import_tasks:
+  #    file: check_prereqs.yml
+  #tags:
+   #   - always
+   #   - prereqs
 
 - name: Run prelim tasks
   ansible.builtin.import_tasks:

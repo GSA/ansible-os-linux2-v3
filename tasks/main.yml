@@ -61,12 +61,12 @@
    #   - always
    #   - prereqs
 
-- name: Run prelim tasks
-  ansible.builtin.import_tasks:
-      file: prelim.yml
-  tags:
-      - prelim_tasks
-      - always
+#- name: Run prelim tasks
+ # ansible.builtin.import_tasks:
+  #    file: prelim.yml
+  #tags:
+   #   - prelim_tasks
+   #   - always
 
 - name: Gather the package facts
   ansible.builtin.package_facts:

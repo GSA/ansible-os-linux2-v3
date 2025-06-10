@@ -22,6 +22,7 @@
       - name: "1.1.2.1.1 | AUDIT | Ensure /tmp is a separate partition | Warn Count"
         ansible.builtin.import_tasks:
             file: warning_facts.yml
+  ignore_errors: true
 
 - name: |
          "1.1.2.1.2 | PATCH | Ensure nodev option set on /tmp partition
